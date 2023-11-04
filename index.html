@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizen</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="render()">
+
+
+    <header>
+        <div class="logo">
+            <img src="./img/note.png" alt="">
+            <h1>Notizen</h1>
+        </div>
+        <img class="menu-mobile" onclick="openNavBar()" src="./img/menu.png" alt="">
+    </header>
+
+    <section class="section">
+        <nav id="nav-bar" class="hide-nav" onclick="closeNavBar()">
+            <div class="links">
+                <img src="./img/note.png" alt="">
+                <a onclick="render()" href="#">Notizen</a>
+            </div>
+            <div class="links">
+                <img src="./img/trash.png" alt="">
+                <a onclick="openTrashSection()" href="#">Papierkorb</a>
+            </div>
+            
+            
+        </nav>
+        <main class="mg-main">
+            
+            <section id="input-section" class="input-section"></section>
+
+            <div id="content" class="mg-content posts"></div>
+
+        </main>
+    </section>
+
+</body>
+
+</html>

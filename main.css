@@ -1,0 +1,275 @@
+@import url(./fonts/roboto.css);
+@import url(./css/mobile.css);
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    /* background-color:antiquewhite; */
+    margin-right: 1px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: silver;
+    border-radius: 2px;
+}
+
+nav {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 140px;
+    width: 200px;
+    height: 80vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    border-right: 2px solid silver;
+    box-shadow: 5px 5px 5px silver;
+    transform: translateX(0px);
+    transition: all 225ms ease-in-out;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav a:hover {
+    font-size: 19px;
+}
+
+nav img {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px silver;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.section {
+    display: flex;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    
+}
+
+.mg-main {
+    margin-left: 280px;
+    margin-right: 32px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-bottom: 2px solid silver;
+    box-shadow: 5px 5px 5px silver;
+    padding-left: 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 80px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px silver;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.input-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 32px;
+}
+
+.input-small {
+    width: 60%;
+    border: 1px solid silver;
+    border-radius: 8px;
+    margin: 16px;
+}
+.input-small:hover {
+    box-shadow: 5px 5px 5px silver;
+}
+
+.input-big {
+    width: 60%;
+    border: 1px solid silver;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.input-big:hover {
+    box-shadow: 5px 5px 5px silver;
+}
+
+input {
+    font-family: unset;
+    font-size: 18px;
+    border: unset;
+    outline: none;
+    padding-left: 8px;
+}
+
+.textarea {
+    height: 100%;
+    width: 100%;
+    border:unset;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+    font-family: unset;
+    font-size: unset;
+}
+
+.text-area-container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    gap:2px;
+}
+
+.update-border {
+    border: 1px solid silver;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+button {
+    padding: 0;
+    border: unset;
+    background-color: white;
+    cursor: pointer;
+}
+
+button img {
+    height: 24px;
+    width: 24px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 105px;
+    font-size: 12px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.posts {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:4px;
+    height: 150px;
+    width: 300px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    margin-left: 16px;
+    margin-top: 16px;
+    padding: 8px;
+}
+
+.post:hover {
+    box-shadow: 5px 5px 5px silver;
+}
+
+.post input {
+    width: 87%;
+}
+
+.title-post {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.crud-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.trash-button {
+    border: 1px solid silver;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 16px;
+    font-size: 18px;
+}
+
+.trash-button:hover {
+    box-shadow: 5px 5px 5px silver;
+}
